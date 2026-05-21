@@ -29,16 +29,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <header>
           <NavBar />
-        </header>
-        
-        <main>
+        <div className="mx-auto w-full max-w-7xl flex-1 px-8 py-8">
           {children}
-        </main>
+        </div>
         <footer className="border-t py-3 text-center text-accent text-xs">
           &copy; 2024 Ministério Público do Rio de Janeiro. Todos os direitos reservados.
-
         </footer>
       </body>
     </html>
