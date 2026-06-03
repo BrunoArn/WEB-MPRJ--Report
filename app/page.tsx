@@ -32,6 +32,20 @@ const reports = [
     location: "Campos dos Goytacazes",
     date: "02/05/2024",
   },
+  {
+    id: "5587F - 3194L",
+    title: "Perícia em ambiente computacional",
+    category: "Computadores",
+    location: "Campos dos Goytacazes",
+    date: "02/05/2024",
+  },
+  {
+    id: "3357F - 1337L",
+    title: "Perícia em ambiente computacional",
+    category: "Computadores",
+    location: "Campos dos Goytacazes",
+    date: "02/05/2024",
+  }
 ];
 
 export default function Home() {
@@ -40,12 +54,13 @@ export default function Home() {
     <main>
       <Hero />
       <Categories />
+      <ReportList />
     </main>
 
   );
 }
 
-function Categories() {
+function ReportList() {
   return (
     <section className="bg-background px-5 py-8 md:px-8">
       <div className="mx-auto max-w-7xl">
@@ -102,6 +117,41 @@ function Categories() {
           </button>
         </div>
 
+      </div>
+    </section>
+  )
+}
+
+function Categories() {
+  return (
+    <section className="bg-background px-5 pt-8 md:px-8">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-4 flex items-end justify-between gap-4">
+          <div>
+            <p className="text-xs font-extrabold uppercase text-primary-red">
+              Acervo
+            </p>
+
+            <h2 className="mt-1 text-xl font-black text-[#303036]">
+              Categorias de relatórios
+            </h2>
+          </div>
+        </div>
+
+        <div className="flex gap-2 overflow-x-auto pb-2">
+          {categories.map((category, index) => (
+            <button
+              key={category}
+              type="button"
+              className={`shrink-0 rounded-md border px-4 py-2 text-sm font-bold transition ${index === 0
+                  ? "border-primary-red bg-primary-red text-white"
+                  : "border-[#e6e2df] bg-white text-[#5f6067] hover:border-primary-red/40 hover:text-primary-red"
+                }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
       </div>
     </section>
   )
