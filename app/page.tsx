@@ -125,6 +125,7 @@ function ReportList() {
 function Categories() {
   return (
     <section className="bg-background px-5 pt-8 md:px-8">
+      {/*Upper Text*/}
       <div className="mx-auto max-w-7xl">
         <div className="mb-4 flex items-end justify-between gap-4">
           <div>
@@ -138,14 +139,15 @@ function Categories() {
           </div>
         </div>
 
+        {/*List of categories as buttons*/}
         <div className="flex gap-2 overflow-x-auto pb-2">
           {categories.map((category, index) => (
             <button
               key={category}
               type="button"
               className={`shrink-0 rounded-md border px-4 py-2 text-sm font-bold transition ${index === 0
-                  ? "border-primary-red bg-primary-red text-white"
-                  : "border-[#e6e2df] bg-white text-[#5f6067] hover:border-primary-red/40 hover:text-primary-red"
+                ? "border-primary-red bg-primary-red text-white"
+                : "border-[#e6e2df] bg-white text-[#5f6067] hover:border-primary-red/40 hover:text-primary-red"
                 }`}
             >
               {category}
