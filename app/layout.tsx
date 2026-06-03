@@ -34,7 +34,7 @@ export default function RootLayout({
           {children}
         </div>
         <footer className="border-t py-3 text-center text-accent text-xs">
-          &copy; 2024 Ministério Público do Rio de Janeiro. Todos os direitos reservados.
+          &copy; 2026 Ministério Público do Rio de Janeiro. Todos os direitos reservados.
         </footer>
       </body>
     </html>
