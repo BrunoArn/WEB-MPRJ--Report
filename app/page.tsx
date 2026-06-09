@@ -1,9 +1,5 @@
-"use client";
-
 import Hero from "@/components/Hero";
-import { CategoriesBar } from "@/components/CategoriesBar";
-import { ReportList } from "@/components/ReportList";
-import { reports, categories } from "@/components/reports.mock";
+import ReportSection from "@/components/ReportSection";
 
 
 export default function Home() {
@@ -11,12 +7,7 @@ export default function Home() {
 
     <main>
       <Hero />
-      <CategoriesBar 
-      categories={categories}
-      selectedCategory="Todos"
-      onCategorySelect={(category) => console.log("Categoria selecionada:", category)}
-      />
-      <ReportList reports={reports} />
+      <ReportSection />
     </main>
 
   );

@@ -48,7 +48,7 @@ export function ReportList({ reports, limit = 4 }: ReportListProps) {
                         </p>
 
                         <p className="mt-3 text-xs text-[#8a8a92]">
-                            N {report.location} - {report.date}
+                            {report.location} - {report.date}
                         </p>
                     </article>
                 ))}
