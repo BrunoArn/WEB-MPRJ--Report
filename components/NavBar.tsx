@@ -11,6 +11,13 @@ export default function NavBar() {
                     </NavLink>
                 </h1>
 
+                {/* Center */}
+                <ul>
+                    <NavLink href="/relatorios">
+                        Relatórios
+                    </NavLink>
+                </ul>
+
                 {/* Right Side */}
                 <ul className="flex gap-8">
                     <li className="ml-auto">
